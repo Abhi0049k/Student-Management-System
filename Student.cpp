@@ -57,11 +57,13 @@ int Student::getRollNo() const
 
 void Student::displayDetails() const
 {
-    std::cout << "Name: " << name << "\n"
-              << "Course: " << course << "\n"
-              << "Roll Number: " << rollNo << "\n"
-              << "Age: " << age << "\n"
-              << "GPA: " << gpa << "\n";
+    const int width = 20;
+
+    std::cout << std::left << std::setw(width) << "Name:" << name << "\n"
+              << std::left << std::setw(width) << "Course:" << course << "\n"
+              << std::left << std::setw(width) << "Roll Number:" << rollNo << "\n"
+              << std::left << std::setw(width) << "Age:" << age << "\n"
+              << std::left << std::setw(width) << "GPA:" << std::fixed << std::setprecision(2) << gpa << "\n";
 }
 
 json Student::toJson() const
