@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "age": 21,
+        "course": "Bachelor of Computer application",
+        "gpa": 8.899999618530273,
+        "name": "Mangalam Kumar",
+        "rollNo": 1
+    }
+]
